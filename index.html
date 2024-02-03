@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body> 
+    <!-- La principal diferencia en la forma de estructurar el HTML con respecto al video fue: 
+        Dentro de Main el coloco una etiqueta section y DENTRO de dicha etiqueta dos contenedores DIV.
+        
+        FINALMENTE separo dichos DIV's de las misma forma en la cual lo hice yo, es decir, uno para la imagen (el superior) y el otro para el formulario -->
+    <main>
+        <section id="login">
+            <div id="contenedor_img">
+            </div>
+            <div id="contenedor_form">
+                <h1>Login</h1>
+                <p>Sea bienvenido nuevamente. Haga <br> login para accesar a su cuenta y poder <br> hacer las configuraciones en su <br> perfil</p>
+                <form action="login.php" method="post">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" value="" id="usuario"> <br>
+                    <label for="contrasena">Contrasena</label>
+                    <input type="password" name="" id="contrasena"><br>
+                    <input type="submit" value="Entrar"><br>
+                    <input type="button" value="Olvide la contrasena">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
