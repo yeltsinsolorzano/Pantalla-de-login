@@ -13,7 +13,10 @@
     <!-- La principal diferencia en la forma de estructurar el HTML con respecto al video fue: 
         Dentro de Main el coloco una etiqueta section y DENTRO de dicha etiqueta dos contenedores DIV.
         
-        FINALMENTE separo dichos DIV's de las misma forma en la cual lo hice yo, es decir, uno para la imagen (el superior) y el otro para el formulario -->
+        FINALMENTE separo dichos DIV's de las misma forma en la cual lo hice yo, es decir, uno para la imagen (el superior) y el otro para el formulario 
+    
+        Otra cosa importante que hizo fue encerrar en DIV's los input de usuario y contrasena, estoy sirvio para poder hacer el contraste con el fondo morado.
+        -->
     <main>
         <section id="login">
             <div id="contenedor_img">
@@ -21,20 +24,27 @@
             <div id="contenedor_form">
                 <h1>Login</h1>
                 <p>Sea bienvenido nuevamente. Haga login para accesar a su cuenta y poder hacer las configuraciones en su perfil</p>
-                <form action="login.php" method="post">
-                    <label for="usuario"><i class="material-symbols-outlined">Person</i></label>
-                    <input type="text" value="" id="usuario">
-                    <label for="contrasena"><i class="material-symbols-outlined">vpn_key</i></label></label>
-                    <input type="password" name="" id="contrasena">
+                <form action="login.php" method="post" autocomplete="on">
+
+                    <div class="contenedor_form__cajas">
+                        <i class="material-symbols-outlined">Person</i>
+                        <input type="email" name="login"  id="usuario" placeholder="Introduzca su E-mail" autocomplete="email" required maxlength="30">
+                        <label for="usuario">usuario</label>
+                    </div>
+
+                    <div class="contenedor_form__cajas">
+                        <i class="material-symbols-outlined">vpn_key</i>
+                        <input type="password" name="" id="contrasena" class="contenedor_form__cajas--password" placeholder="Introduzca su contrasena" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="contrasena">Contrasena</label>
+                    </div>
+                    
                     <input type="submit" value="Entrar" class="boton">
-                    <input type="button" value="Olvide la contrasena" class="boton">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        Olvide la contrasena <i class="material-symbols-outlined">mail</i>
+                    </a>
                 </form>
             </div>
         </section>
     </main>
 </body>
 </html>
-
-<span class="">
-   
-    </span>
