@@ -39,6 +39,8 @@ section#login {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    transition: width .3s, height .3s;
 }
 
 div#contenedor_img {
@@ -65,8 +67,22 @@ div#contenedor_form h1 {
 }
 
 div#contenedor_form p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
+
+input {
+    display: inline-block;
+    width: 87%;
+    height: 35px;
+    margin: 3px 0px;
+    border-radius: 5px;
+}
+
+input.boton {
+    width: 100%;
+}
+
+
 
 
 

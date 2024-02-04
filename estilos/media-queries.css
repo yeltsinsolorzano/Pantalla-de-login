@@ -6,20 +6,69 @@
 
 /* ESTILO PARA TABLET */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    
+@media screen and (min-width: 780px) and (max-width: 992px) {
+
+    body, html {
+        background-image: linear-gradient(#5f2c82, #49a09d);
+    }
+
+    section#login {
+        height: 350px;
+        width: 720px;
+    }
+
+    div#contenedor_img {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    div#contenedor_form {
+        float: right;
+        width: 60%;
+    }
+
+    input {
+        width: 93%;
+        height: 45px;
+        margin: 3px 0px;
+        border-radius: 5px;
+    }
+
 }
 
 
 /* ESTILO PARA DESKTOP */
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) {
 
-}
+    body, html {
+        background-image: linear-gradient(#5f2c82, #49a09d);
+    }
+
+    section#login {
+        width: 80%;
+        height: 450px;
+        max-width: 800px;
+    }
+
+    div#contenedor_img {
+        float: right;
+        width: 40%;
+        height: 100%;
+    }
 
 
-/* ESTILO PARA TV */
+    div#contenedor_form {
+        float: left;
+        width: 60%;
+    }
 
-@media screen and (min-width: 1200px) {
+    input {
+        width: 93.8%;
+        height: 60px;
+        margin: 3px 0px;
+        border-radius: 5px;
+    }
 
 }
